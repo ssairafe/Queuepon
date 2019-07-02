@@ -27,6 +27,7 @@ header {
   margin: auto;
   margin-bottom: 4px;
   vertical-align: top;
+  background-color: lightblue;
 }
 
 main {
@@ -48,4 +49,5 @@ main {
   height: 30%;
   border: black solid 2px;
   margin-left: 15px;
+  background-color: black
 }
