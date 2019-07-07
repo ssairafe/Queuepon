@@ -1,53 +1,138 @@
 header {
-  border: solid black 2px;
   width: 100%;
-  height: 15vh;
+  height: 15vmin;
   font: bold;
-  font-size: 80px;
+  font-size: 5vmax;
   text-align: center;
   margin: 1px 1px 2px 1px;
+  background-color: silver;
+  color: aliceblue;
+
 }
 
 .statsOutBox{
-  border: solid black 2px;
   width: 25vw;
   height: 40vw;
   margin-top: 4px;
   text-align: center;
-  font-size: 20px;
+  font-size: 2vw;
   vertical-align: top;
   display: inline-block;
-
+  padding-top: 2%;
 }
 
 .statsBox {
   height: 13%;
   width: 75%;
-  border: solid black 1px;
   margin: auto;
   margin-bottom: 4px;
-  vertical-align: top;
-  background-color: lightblue;
+  background-color: rebeccapurple;
+  text-align: center;
+  line-height: 70px;
+  opacity: 0.75;
+
 }
+
 
 main {
   display: inline-block;
-  margin-right: 10px;
-}
-.container {
-  border: solid black 2px;
-  display: flexbox;
+  margin-right: 1%;
   width: 70vw;
   height: 40vw;
-  margin-top: 4px;
+  position: absolute;
 
+}
+.container {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 0.5%;
+  position: relative;
+  padding-bottom: 2%;
+  padding-right: 3%;
 }
 
 .cardHolder {
   display: inline-table;
   width: 14%;
-  height: 30%;
+  height: 29%;
   border: black solid 2px;
-  margin-left: 15px;
-  background-color: black
+  margin: 1% 1% 1% 1%;
+  background-color: none;
+  position: relative;
+}
+
+body {
+  margin-bottom: 1px;
+}
+
+.front {
+  background-size: cover;
+  background-position: center;
+   height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.back {
+  background-color: rebeccapurple;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  font-size: 6em;
+  color: aliceblue;
+  font-style: bold;
+  text-align: center;
+  line-height: 200px;
+}
+
+span {
+  color: rebeccapurple;
+}
+
+.target {
+background-image: url(../memory_match/assets/images/targetlogo.png);
+}
+
+.amazon {
+background-image: url(../memory_match/assets/images/amazon_PNG5.png);
+
+}
+
+.apple {
+background-image: url(../memory_match/assets/images/Apple-Logo-Png-Download-768x950.png);
+
+}
+
+.bmw {
+background-image: url(../memory_match/assets/images/bmw_logo_PNG19701.png);
+
+}
+
+.lafit {
+background-image: url(../memory_match/assets/images/lafit.png);
+
+}
+
+.starbucks {
+background-image: url(../memory_match/assets/images/starbucks.png);
+
+}
+
+.dominos {
+background-image: url(../memory_match/assets/images/dominos.png);
+
+}
+
+.playstation {
+background-image: url(../memory_match/assets/images/navy-playstation-png-logo-5.png);
+
+}
+
+.android {
+background-image: url(../memory_match/assets/images/android.png);
+
 }
