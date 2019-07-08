@@ -20,7 +20,7 @@ function resetStats() {
   $("#attempts").text("0");
   $("#accuracy").text("0" + " %");
   $(".back").css("display", "block");
-  $("header").text("Que-pon");
+  $("header").text("Quepon");
 }
 
 function initializeApp() {
