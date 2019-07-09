@@ -11,6 +11,8 @@ header {
 
 }
 
+
+
 .statsOutBox{
   width: 25vw;
   height: 40vw;
@@ -138,4 +140,29 @@ background-image: url(../memory_match/assets/images/navy-playstation-png-logo-5.
 .android {
 background-image: url(../memory_match/assets/images/android.png);
 
+}
+#modulBack {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: .55;
+  z-index: 1;
+  display: none;
+}
+
+#modul {
+  top: 35%;
+  right: 30%;
+  position: fixed;
+  height: 37%;
+  width: 39%;
+  background-color: aliceblue;
+  font-size: 5vmax;
+  color: rebeccapurple;
+  font-family:  Bubblegum Sans;
+  opacity: 1;
+  z-index: 2;
+  text-align: center;
+  display: none;
 }

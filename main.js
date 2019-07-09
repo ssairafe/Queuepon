@@ -20,7 +20,8 @@ function resetStats() {
   $("#attempts").text("0");
   $("#accuracy").text("0" + " %");
   $(".back").css("display", "block");
-  $("header").text("Quepon");
+  $("#modulBack").css("display", "none");
+  $("#modul").css("display", "none");
 }
 
 function initializeApp() {
@@ -47,8 +48,9 @@ function handleClick(event) {
         secondCard = null;
       }, 1200);
       if (matches===maxMatches) {
-        $("header").text("Enjoy those Quepons! Click to play again").css( "font", "1rem");
-        $("header").on("click", resetStats);
+        $("#modul").on("click", resetStats);
+        $("#modulBack").css("display", "block");
+        $("#modul").css("display", "block");
         gamesPlayed++;
         $("#gamesPlayed").text(gamesPlayed);
       }
