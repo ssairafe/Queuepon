@@ -51,7 +51,7 @@ function addCards () {
   var backCard = $('<div>', {
     class: 'back ',
     company: companyName
-  }).text("?");
+      }).text("?");
   var frontCard = $('<div>', {
     class: 'front ' + companyName
   });
