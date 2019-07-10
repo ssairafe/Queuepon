@@ -1,74 +1,77 @@
+html {
+  font-family: Bubblegum Sans;
+}
+
+
+
 header {
   width: 100%;
   height: 15vmin;
   font: bold;
   font-size: 5vmax;
   text-align: center;
-  margin: 1px 1px 2px 1px;
-  background-color: silver;
+  background-color: transparent;
   color: aliceblue;
   font-family: Bubblegum Sans;
-
+  position: relative;
+  right: 3.4%;
 }
+
+
 
 
 
 .statsOutBox{
   width: 25vw;
   height: 40vw;
-  margin-top: 4px;
   text-align: center;
   font-size: 2vw;
   vertical-align: top;
   display: inline-block;
   padding-top: 2%;
+  z-index: 2;
 }
 
 .statsBox {
   height: 13%;
   width: 75%;
-  margin: auto;
-  margin-bottom: 4px;
-  background-color: rebeccapurple;
+  margin: 1px 1px 1px 1px;
+  background-color: hsla(270, 63%, 49%, 0.55);
   text-align: center;
   line-height: 70px;
-  opacity: 0.75;
-
 }
 
 
 main {
   display: inline-block;
-  margin-right: 1%;
-  width: 70vw;
-  height: 40vw;
+  width: 100%;
+  height: 100%;
   position: absolute;
 
 }
 .container {
   display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin-top: 0.5%;
+  width: 60%;
+  height: 50%;
   position: relative;
-  padding-bottom: 2%;
-  padding-right: 3%;
+  z-index: 2;
 }
 
 .cardHolder {
   display: inline-table;
-  width: 14%;
-  height: 29%;
-  border: black solid 2px;
-  margin: 1% 1% 1% 1%;
+  width: 15%;
+  height: 45%;
+  border: transparent solid 6px;
   background-color: none;
   position: relative;
-  background-color: aliceblue;
+  background-color: transparent;
 }
 
 body {
-  margin-bottom: 1px;
-  background-color: silver;
+  height: 100vh;
+  width: 100vw;
+  background: repeating-linear-gradient(to right, rgba(100, 97, 97)50%, rgba(192,192,192)100%)
+
 }
 
 .front {
@@ -87,11 +90,11 @@ body {
   width: 100%;
   position: absolute;
   display: inline-block;
-  font-size: 6em;
+  font-size: 16vh;
   color: aliceblue;
   font-style: bold;
   text-align: center;
-  line-height: 200px;
+  line-height: 230px;
 }
 
 span {
@@ -103,7 +106,7 @@ background-image: url(../memory_match/assets/images/targetlogo.png);
 }
 
 .amazon {
-background-image: url(../memory_match/assets/images/amazon_PNG5.png);
+background-image: url(../memory_match/assets/images/amazon.png);
 
 }
 
@@ -113,7 +116,7 @@ background-image: url(../memory_match/assets/images/Apple-Logo-Png-Download-768x
 }
 
 .bmw {
-background-image: url(../memory_match/assets/images/bmw_logo_PNG19701.png);
+background-image: url(../memory_match/assets/images/bmw.png);
 
 }
 
@@ -147,7 +150,7 @@ background-image: url(../memory_match/assets/images/android.png);
   width: 100vw;
   background-color: black;
   opacity: .55;
-  z-index: 1;
+  z-index: 3;
   display: none;
 }
 
@@ -162,7 +165,7 @@ background-image: url(../memory_match/assets/images/android.png);
   color: rebeccapurple;
   font-family:  Bubblegum Sans;
   opacity: 1;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
   display: none;
 }
