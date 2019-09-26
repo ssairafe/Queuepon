@@ -21,7 +21,7 @@ function resetStats() {
   $(".container").children('.cardHolder').remove();
   shuffle(cardArray);
   addCards();
-  $(".back").css("display", "block");
+  $(".back").css("display", "inline-block");
   $("#attempts").text("0");
   $("#accuracy").text("0" + " %");
   $("#modulBack").css("display", "none");
