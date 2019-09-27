@@ -87,7 +87,15 @@ function handleClick(event) {
         secondCard.css("display", "none");
         firstCard = null;
         secondCard = null;
-      }, 1200);
+      }, 700);
+
+     var companyWebsite = 'www.' + secondCard.attr('company') + '.com';
+     var link = $("<a>").attr("href", companyWebsite).addClass('website').text(companyWebsite);
+     var linkBox = $("<div>").addClass('queuepon borderless').append(link);
+     var couponMessage = $("<div>").addClass("queuepon").text('Use code XVEG45 for 25% off all products at:').append(linkBox);
+
+     $('.couponQueue').append(couponMessage);
+
       if (matches===maxMatches) {
         $("#modul").on("click", resetStats);
         $("#modulBack").css("display", "block");
@@ -108,7 +116,7 @@ function handleClick(event) {
         console.log("Not matching");
         firstCard = null;
         secondCard = null;
-      }, 1200);
+      }, 700);
     }
   }
   accuracy = average(matches, attempts);

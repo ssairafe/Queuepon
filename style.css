@@ -73,18 +73,6 @@ header {
   z-index: 2;
 }
 
-/* @media only screen and (max-width: 500px) {
- .statsOutBox{
-  width: 25vw;
-  height: 40vw;
-  text-align: center;
-  font-size: 2vw;
-  display: block;
-  padding-top: 2%;
-  z-index: 2;
-  }
-} */
-
 .statsBox {
   height: 13%;
   width: 75%;
