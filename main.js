@@ -18,7 +18,7 @@ function resetStats() {
   secondCard= null;
   matches= null;
   attempts= null;
-  $(".container").children('.cardHolder').remove();
+  $(".carrier").children('.cardHolder').remove();
   shuffle(cardArray);
   addCards();
   $(".back").css("display", "inline-block");
@@ -59,7 +59,7 @@ function addCards () {
     class: 'cardHolder'
   });
     card.append(frontCard, backCard);
-  $('.container').append(card);
+  $('.carrier').append(card);
   }
   $(".back").on("click", handleClick);
 
