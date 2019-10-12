@@ -18,6 +18,7 @@ function resetStats() {
   secondCard= null;
   matches= null;
   attempts= null;
+  $('.couponQueue').empty();
   $(".carrier").children('.cardHolder').remove();
   shuffle(cardArray);
   addCards();
