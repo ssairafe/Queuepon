@@ -27,6 +27,7 @@ function resetStats() {
   $("#accuracy").text("0" + " %");
   $("#modulBack").css("display", "none");
   $("#modul").css("display", "none");
+  removePlayAgain();
 }
 
 var cardArray = ['target', 'amazon', 'starbucks', 'playstation', 'dominos', 'bmw', 'apple', 'lafit', 'android', 'target', 'amazon', 'starbucks', 'playstation', 'dominos', 'bmw', 'apple', 'lafit', 'android'];
@@ -63,11 +64,28 @@ function addCards () {
   $('.carrier').append(card);
   }
   $(".back").on("click", handleClick);
-
 }
+
+function removeAppearComment() {
+  $('.appearHere').remove();
+}
+
+function removeModal() {
+  $('#modul').remove();
+  $('#modulBack').remove();
+}
+
+function removePlayAgain() {
+  $("#playAgain").remove();
+}
+
 function initializeApp() {
   shuffle(cardArray);
   addCards();
+  $('html, body').animate({
+    scrollTop: $('.queuepon').offset().top
+  }, 800);
+  setTimeout(removeAppearComment, 1500);
 }
 
 function handleClick(event) {
@@ -94,17 +112,22 @@ function handleClick(event) {
      var link = $("<a>").attr("href", companyWebsite).addClass('website').text(companyWebsite);
      var linkBox = $("<div>").addClass('queuepon borderless').append(link);
      var couponMessage = $("<div>").addClass("queuepon").text('Use code XVEG45 for 25% off all products at:').append(linkBox);
+     var playAgain = $("<span>").attr('id', 'playAgain').text("Click here to play again").on('click', resetStats);
 
      $('.couponQueue').append(couponMessage);
 
       if (matches===maxMatches) {
-        $("#modul").on("click", resetStats);
+        $("#modul").on("click", removeModal);
         $("#modulBack").css("display", "block");
         $("#modul").css("display", "block");
         gamesPlayed++;
         $("#gamesPlayed").text(gamesPlayed);
+        $('html, body').animate({
+          scrollTop: $('.queuepon').offset().top
+        }, 10);
+        $('header').append(playAgain);
       }
-      console.log("match");
+
     } else {
       attempts++;
       $(".back").off("click", handleClick);
@@ -114,7 +137,6 @@ function handleClick(event) {
         firstCard.css("display", "block");
         secondCard.css("display", "block");
        $(".back").on("click", handleClick);
-        console.log("Not matching");
         firstCard = null;
         secondCard = null;
       }, 700);

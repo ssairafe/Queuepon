@@ -233,6 +233,10 @@ header {
 
 }
 
+.appearHere {
+  position: absolute;
+  left: 45%;
+}
 
 .front {
   display: inline-block;
@@ -243,6 +247,16 @@ header {
   position: absolute;
   background-repeat: no-repeat;
 
+}
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
 }
 
 .back {
@@ -257,7 +271,27 @@ header {
   color: aliceblue;
   font-style: bold;
   text-align: center;
+  cursor: pointer;
+}
 
+.back:hover {
+    background-color: rebeccapurple;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    font-size: 10rem;
+    color: aliceblue;
+    font-style: bold;
+    text-align: center;
+    cursor: pointer;
+    animation-name: pulse_animation;
+    animation-duration: 1500ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -384,17 +418,25 @@ background-image: url(assets/images/android.png);
   height: 100vh;
   width: 100vw;
   background-color: black;
-  opacity: .55;
+  opacity: .75;
   z-index: 3;
   display: none;
   left: 0;
+}
+
+#playAgain {
+  font-size: 3rem;
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  cursor: pointer;
 }
 
 #modul {
   position: fixed;
   height: 35vmin;
   width: 39vmax;
-  background-color: black;
+  background-color: transparent;
   font-size: 4rem;
   color: rebeccapurple;
   font-family:  Bubblegum Sans;
@@ -404,6 +446,7 @@ background-image: url(assets/images/android.png);
   display: none;
   margin-left: 30%;
   margin-top: 15%;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {
