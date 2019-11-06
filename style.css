@@ -24,45 +24,6 @@ header {
 
 }
 
-@media only screen and (max-width: 1000px) {
-  header {
-  width: 100%;
-  height: 14vmin;
-  font: bold;
-  font-size: 3rem;
-  text-align: center;
-  background-color: transparent;
-  color: rebeccapurple;
-  font-family: Bubblegum Sans;
-  position: fixed;
-  background-color: #242124;
-  z-index: 5;
-  top: 0;
-  left: 0;
-}
-}
-
-@media only screen and (max-width: 500px) {
-  header {
-  width: 100%;
-  height: 15vmin;
-  font: bold;
-  font-size: 3rem;
-  text-align: center;
-  background-color: transparent;
-  color: rebeccapurple;
-  font-family: Bubblegum Sans;
-  position: fixed;
-  background-color: #242124;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  }
-
-}
-
-
-
 .statsOutBox{
   width: 25vw;
   height: 40vw;
@@ -96,63 +57,12 @@ header {
 }
 
 
-/* @media only screen and (min-width: 1020px) {
-  .carrier {
- display: inline-block;
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  margin-left: 0%;
-  margin-right: 0%;
-  }
-} */
-
-@media only screen and (max-width: 1000px) {
-.carrier {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-  }
-
-}
-
-@media only screen and (max-width: 500px) {
-  .carrier {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-}
-
-
 .couponQueue {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-
-@media only screen and (max-width: 768px) {
-  .couponQueue {
-  text-align: center;
-  margin-left: 20%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-}
-
-@media only screen and (max-width: 500px) {
-  .couponQueue {
-  text-align: center;
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 }
 
 
@@ -185,52 +95,6 @@ header {
     margin-left: .5rem;
    margin-right: .5rem;
    text-align: initial;
-}
-
-@media only screen and (max-width: 1370px) {
-  .cardHolder {
-  height: 12vmax;
-   margin-top: .5rem;
-   margin-left: .5rem;
-   margin-right: .5rem;
-  }
-}
-
-
-@media only screen and (max-width: 1024px) {
-  .cardHolder {
-   margin-top: .5rem;
-   margin-left: .5rem;
-   margin-right: .5rem;
-   height: 14vmax;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .cardHolder {
-  width: 12vw;
-  height: 15vmax;
-   margin-top: .5rem;
-   margin-left: .5rem;
-   margin-right: .5rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .cardHolder {
-    display: inline-table;
-  width: 12vw;
-  height: 12vh;
-  border: transparent solid 6px;
-  background-color: none;
-  position: relative;
-  background-color: transparent;
-  vertical-align: top;
-   margin-top: .5rem;
-   margin-left: 0rem;
-   margin-right: 0rem;
-  }
-
 }
 
 .appearHere {
@@ -294,69 +158,8 @@ header {
     animation-timing-function: linear;
 }
 
-@media only screen and (max-width: 1000px) {
-  .back {
-  background-color: rebeccapurple;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: inline-block;
-  font-size: 7rem;
-  color: aliceblue;
-  font-style: bold;
-  text-align: center;
-}
-}
 
-@media only screen and (max-width: 800px) {
-  .back {
-  background-color: rebeccapurple;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: inline-block;
-  font-size: 8rem;
-  color: aliceblue;
-  font-style: bold;
-  text-align: center;
-}
-  }
 
-  @media only screen and (max-width: 670px) {
-  .back {
-  background-color: rebeccapurple;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: inline-block;
-  font-size: 6rem;
-  color: aliceblue;
-  font-style: bold;
-  text-align: center;
-}
-  }
-
-@media only screen and (max-width: 500px) {
-.back {
-  background-color: rebeccapurple;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: inline-block;
-  font-size: 5rem;
-  color: aliceblue;
-  font-style: bold;
-  text-align: center;
-}
-  }
 
 span {
   color: white;
@@ -416,7 +219,7 @@ background-image: url(assets/images/android.png);
 #modulBack {
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   opacity: .75;
   z-index: 3;
@@ -449,8 +252,153 @@ background-image: url(assets/images/android.png);
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
-#modul {
+
+@media only screen and (max-width: 1370px) {
+  .cardHolder {
+  height: 12vmax;
+   margin-top: .5rem;
+   margin-left: .5rem;
+   margin-right: .5rem;
+  }
+
+  #playAgain {
+    width: 250px;
+    font-size: 3rem;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    cursor: pointer;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .cardHolder {
+   margin-top: .5rem;
+   margin-left: .5rem;
+   margin-right: .5rem;
+   height: 14vmax;
+  }
+   #playAgain {
+    width: 250px;
+    font-size: 3rem;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cardHolder {
+  width: 12vw;
+  height: 15vmax;
+   margin-top: .5rem;
+   margin-left: .5rem;
+   margin-right: .5rem;
+  }
+   header {
+  width: 100%;
+  height: 14vmin;
+  font: bold;
+  font-size: 3rem;
+  text-align: center;
+  background-color: transparent;
+  color: rebeccapurple;
+  font-family: Bubblegum Sans;
+  position: fixed;
+  background-color: #242124;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+.carrier {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .back {
+  background-color: rebeccapurple;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  font-size: 7rem;
+  color: aliceblue;
+  font-style: bold;
+  text-align: center;
+}
+}
+@media only screen and (max-width: 800px) {
+  .back {
+  background-color: rebeccapurple;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  font-size: 8rem;
+  color: aliceblue;
+  font-style: bold;
+  text-align: center;
+}
+  }
+
+@media only screen and (max-width: 768px) {
+  .couponQueue {
+  text-align: center;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+}
+  @media only screen and (max-width: 700px) {
+    #modul {
+    position: fixed;
+    height: 35vmin;
+    width: 39vmax;
+    background-color: transparent;
+    font-size: 3rem;
+    color: rebeccapurple;
+    font-family: Bubblegum Sans;
+    opacity: 1;
+    z-index: 4;
+    text-align: center;
+    margin-left: 34%;
+    margin-top: 15%;
+    cursor: pointer;
+    }
+    #playAgain {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (max-width: 670px) {
+  .back {
+  background-color: rebeccapurple;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  font-size: 6rem;
+  color: aliceblue;
+  font-style: bold;
+  text-align: center;
+}
+  }
+
+  @media only screen and (max-width: 500px) {
+    #modul {
   position: fixed;
   height: 35vmin;
   width: 39vmax;
@@ -462,7 +410,77 @@ background-image: url(assets/images/android.png);
   z-index: 4;
   text-align: center;
   display: none;
-  margin-left: 5%;
+  margin-left: 14%;
   margin-top: 25%;
-}
+    }
+  header {
+  width: 375px;
+  height: 15vmin;
+  font: bold;
+  font-size: 3rem;
+  text-align: center;
+  background-color: transparent;
+  color: rebeccapurple;
+  font-family: Bubblegum Sans;
+  position: fixed;
+  background-color: #242124;
+  z-index: 5;
+  top: 0;
+  left: 0;
   }
+
+  #playAgain {
+    font-size: 1rem;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    cursor: pointer;
+    width: 81px;
+  }
+
+  .queuepon {
+    border: 1px solid black;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+   .carrier {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+   .couponQueue {
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+ .cardHolder {
+    display: inline-table;
+  width: 12vw;
+  height: 12vh;
+  border: transparent solid 6px;
+  background-color: none;
+  position: relative;
+  background-color: transparent;
+  vertical-align: top;
+   margin-top: .5rem;
+   margin-left: 0rem;
+   margin-right: 0rem;
+  }
+  .back {
+  background-color: rebeccapurple;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  font-size: 5rem;
+  color: aliceblue;
+  font-style: bold;
+  text-align: center;
+}
+}
