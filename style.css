@@ -287,6 +287,20 @@ background-image: url(assets/images/android.png);
     left: 3%;
     cursor: pointer;
   }
+  header {
+  width: 100%;
+  height: 15vmin;
+  font: bold;
+  font-size: 6rem;
+  text-align: center;
+  color: rebeccapurple;
+  font-family: Bubblegum Sans;
+  position: fixed;
+  background-color: #242124;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -414,7 +428,7 @@ background-image: url(assets/images/android.png);
   margin-top: 25%;
     }
   header {
-  width: 375px;
+  width: 100%;
   height: 15vmin;
   font: bold;
   font-size: 3rem;
